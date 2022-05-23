@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&family=Rajdhani:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&family=Satisfy&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: 5px;
+}
+
+@import './variables.css';
+body {
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+/**********  HOME PAGE  *********/
+
+.main-home-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.menu-page-container {
+    position: fixed;
+    top: 0;
+    background: var(--white-color);
+    width: 0;
+    height: 100vh;
+    z-index: 200;
+    scrollbar-width: none;
+    overflow: hidden;
+}
+
+
+/**********  PRODUCT PAGE  *********/
+
+.main-product-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+
+/**********  WISHLIST PAGE  *********/
+
+.wish-list-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+/**********  CART PAGE  *********/
+
+.main-cart-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+/**********  SETTINGS PAGE  *********/
+
+.main-settings-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .active-menu-page {
+        width: 100vw;
+        transition: 0.3s;
+    }
+    .inactive-menu-page {
+        width: 0;
+        transition: 0.3s;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .active-menu-page {
+        width: 100vw;
+        transition: 0.3s;
+    }
+    .inactive-menu-page {
+        width: 0;
+        transition: 0.3s;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .home-header-section {
+        display: none;
+    }
+    .active-menu-page {
+        width: 60vw;
+        transition: 0.3s;
+    }
+    .inactive-menu-page {
+        width: 0;
+        transition: 0.3s;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/* .test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */
