@@ -14,7 +14,7 @@ const DiscountSection = () => {
           <div className='image-overlay'>
             <div className='overlay-title'>
               <h1>15% Off Thrift Tops</h1>
-              <p>Lorem ipsum dolor sit.</p>
+              <p>Hurray! and get the best fits</p>
             </div>
             <Link to='/products'>
               <button type='button'>BUY NOW</button>
@@ -26,7 +26,7 @@ const DiscountSection = () => {
           <div className='image-overlay'>
             <div className='overlay-title'>
               <h1>Get The Best From Us</h1>
-              <p>Lorem ipsum dolor sit.</p>
+              <p>Click on the button to start</p>
             </div>
             <Link to='/products'>
               <button type='button'>BUY NOW</button>
@@ -38,7 +38,7 @@ const DiscountSection = () => {
           <div className='image-overlay'>
             <div className='overlay-title'>
               <h1>Have Your Own Style</h1>
-              <p>Lorem ipsum dolor sit.</p>
+              <p>Be your Queen/King</p>
             </div>
             <Link to='/products'>
               <button type='button'>BUY NOW</button>

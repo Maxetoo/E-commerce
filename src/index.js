@@ -7,7 +7,6 @@ import { ProductsContext } from './Contexts/Products'
 import { AppFilterContext } from './Contexts/Filters'
 import { AppCartContext } from './Contexts/Usercart'
 import './Styling/main.css'
-const idClient = process.env.REACT_APP_CLIENT_ID
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -15,7 +14,7 @@ root.render(
     <BrowserRouter>
       <Auth0Provider
         domain='dev-zqubepaq.us.auth0.com'
-        clientId={idClient}
+        clientId='v1xypeUmTZXa8wJKCFvOJBXO2DL67pEe'
         redirectUri={window.location.origin}
       >
         <ProductsContext>

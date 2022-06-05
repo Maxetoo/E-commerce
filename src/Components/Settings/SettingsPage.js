@@ -13,7 +13,7 @@ import DefaultImage from '../../Assets/Images/DEFAULT-IMG1.jpg'
 
 const SettingsPage = () => {
   const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0()
-  const { selectedRate } = useGlobalProducts()
+  const { selectedRate, loading } = useGlobalProducts()
   const { code } = selectedRate
   const [ratesOpen, setRatesOpen] = useState(false)
 
@@ -24,6 +24,21 @@ const SettingsPage = () => {
     } else {
       setRatesOpen(true)
     }
+  }
+
+  if (loading) {
+    return (
+      <>
+        <h1 style={{ margin: '3rem' }}>Loading...</h1>
+        <div className='product-btn'>
+          <Link to='/'>
+            <button type='button' className='btn-back'>
+              Back Home
+            </button>
+          </Link>
+        </div>
+      </>
+    )
   }
 
   return (

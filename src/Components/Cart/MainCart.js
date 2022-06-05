@@ -142,6 +142,7 @@ const Wrapper = styled.div`
     color: var(--white-color);
     cursor: pointer;
     border: solid 1px var(--black-color);
+    border: none;
   }
 
   .clear-btn {
@@ -152,6 +153,7 @@ const Wrapper = styled.div`
     color: var(--white-color);
     cursor: pointer;
     border: solid 1px var(--black-color);
+    border: none;
   }
 
   .summary-main-container {

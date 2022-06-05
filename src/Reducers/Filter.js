@@ -87,30 +87,31 @@ export const filterProductReducer = (state, action) => {
 
   if (action.type === 'SEARCH-FILTER') {
     const { filterProducts } = state
-    let { filterText } = state
+    let filtered
+
     //search by name
     if (action.payload) {
       const filterNameSearch = filterProducts.filter((value) => {
         return value.name.toLowerCase().startsWith(action.payload)
       })
-      filterText = filterNameSearch
+      filtered = filterNameSearch
     }
     //search by company
     if (action.payload) {
       const filterCompanySearch = filterProducts.filter((value) => {
         return value.company.toLowerCase().startsWith(action.payload)
       })
-      filterText = filterCompanySearch
+      filtered = filterCompanySearch
     }
     // return all products when not searching
     if (!action.payload) {
-      filterText = filterProducts
+      filtered = filterProducts
     }
 
     return {
       ...state,
       filterText: action.payload,
-      filterResult: filterText,
+      filterResult: filtered,
     }
   }
 
