@@ -26,21 +26,6 @@ const SettingsPage = () => {
     }
   }
 
-  if (loading) {
-    return (
-      <>
-        <h1 style={{ margin: '3rem' }}>Loading...</h1>
-        <div className='product-btn'>
-          <Link to='/'>
-            <button type='button' className='btn-back'>
-              Back Home
-            </button>
-          </Link>
-        </div>
-      </>
-    )
-  }
-
   return (
     <Wrapper>
       {isAuthenticated && (
