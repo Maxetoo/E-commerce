@@ -56,7 +56,6 @@ const ProductsContext = ({ children }) => {
   }
 
   const fetchCurrency = async () => {
-    setLoading(true)
     try {
       const resp = await axios.get(URL)
       const rates = await resp.data
@@ -84,8 +83,6 @@ const ProductsContext = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('addWishlist', JSON.stringify(value.wishList))
   }, [value.wishList])
-
-  // https://api.currencyapi.com/v3/latest?apikey=ObRIunaYiiehp8i1lWN7pzUwcCoWI2ZuoQJlZN8z
 
   return (
     <ProductContext.Provider
